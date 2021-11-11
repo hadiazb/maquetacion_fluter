@@ -14,8 +14,27 @@ class BasicDesignScreen extends StatelessWidget {
         // Titulo
         Title(),
         // Button Section
-        ButtonSection()
+        ButtonSection(),
+        // Description
+        Content()
       ]),
+    );
+  }
+}
+
+class Content extends StatelessWidget {
+  const Content({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      child: const Text(
+        'Cillum sint quis sunt proident labore sint nisi culpa labore. Irure officia fugiat deserunt aliqua nulla cupidatat nostrud id esse commodo elit.Fugiat nisi in eu laborum nisi laboris commodo non aliquip in Lorem id exercitation.Labore sint exercitation sit proident adipisicing nisi enim minim Lorem proident velit.',
+        textAlign: TextAlign.justify,
+      ),
     );
   }
 }
